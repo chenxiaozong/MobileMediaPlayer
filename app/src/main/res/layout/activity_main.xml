@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    tools:context="com.example.chen.mobilemediaplayer.MainActivity">
+
+    <!--标题栏-->
+    <include layout="@layout/title_bar"/>
+    
+    <!--中间fragment-->
+    <FrameLayout
+        android:id="@+id/fl_main_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </FrameLayout>
+
+    <!--底部按钮栏-->
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:id="@+id/rb_main_native_video"
+            android:text="本地视频"
+
+            android:drawableTop="@drawable/rb_selecter_native_video"
+            android:textColor="@drawable/rb_selector_text_color"
+
+            android:drawablePadding="3dp"
+            android:textSize="10sp"
+
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <RadioButton
+            android:id="@+id/rb_main_native_audio"
+            android:text="网络视频"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_selecter_native_audio"
+
+            android:button="@android:color/transparent"
+            android:textColor="@drawable/rb_selector_text_color"
+            android:drawablePadding="3dp"
+            android:textSize="10sp"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_main_net_video"
+            android:text="网络视频"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_selecter_net_audio"
+
+            android:button="@android:color/transparent"
+            android:textColor="@drawable/rb_selector_text_color"
+            android:drawablePadding="3dp"
+            android:textSize="10sp"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rb_main_net_audio"
+            android:text="网络音乐"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:drawableTop="@drawable/rb_selector_net_audio"
+
+            android:button="@android:color/transparent"
+            android:textColor="@drawable/rb_selector_text_color"
+            android:drawablePadding="3dp"
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

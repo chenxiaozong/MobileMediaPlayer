@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--实例化的是:com.example.chen.mobilemediaplayer.view.TitleBar-->
+<com.example.chen.mobilemediaplayer.view.TitleBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:background="@android:color/holo_blue_dark"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <!--logo-->
+    <ImageView
+        android:src="@drawable/ic_topbanner_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+
+    <!--搜素-->
+    <TextView
+        android:id="@+id/tv_title"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        android:text="全网搜索"
+
+        android:textColor="@drawable/tv_drawable_textcolor_selector"
+        android:drawableLeft="@drawable/tv_drawable_seacher_selector"
+        android:background="@drawable/tv_drawable_background_selector"
+
+
+        android:drawablePadding="10dp"
+        android:clickable="true"
+
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <!--game-->
+    <RelativeLayout
+        android:id="@+id/rl_title_game"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title_game"
+            android:drawableRight="@drawable/ic_topbanner_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_toRightOf="@id/tv_title_game"
+            android:background="@drawable/title_drawable_game_dot"
+            android:layout_width="6dp"
+            android:layout_height="6dp" />
+    </RelativeLayout>
+    <!--使用记录-->
+    <ImageView
+        android:id="@+id/iv_title_record"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_topbanner_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</com.example.chen.mobilemediaplayer.view.TitleBar>
+<!--
+标题栏:
+    应用logo
+    搜索栏:搜索按钮,文本,形状(圆角)
+    游戏  : 文本,dot
+    使用记录: 图标image
+-->

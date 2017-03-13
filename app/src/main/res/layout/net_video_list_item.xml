@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/im_video_item"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/video_default" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/im_video_item"
+            android:layout_alignRight="@+id/im_video_item"
+
+            android:layout_marginBottom="5dp"
+
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/center_collect_play" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:text="标题"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_movie_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textSize="12sp"
+            android:text="视频名称"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:id="@+id/tv_movie_sumary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:text="视频描述视频描述视频描述视频描述视频描述视频描述"
+ />
+
+
+    </LinearLayout>
+</LinearLayout>
+
+
+    <!--网络视频列表布局文件:
+
+    视频列表 对应的listview 的一个条目-->

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="output"><source path="C:\Android\.android\build-cache\18cdc4b1469d429aaab050b701954f791120bfa3\output\assets"/></dataSet><dataSet config="main"><source path="D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\assets"/><source path="D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\debug\assets"/></dataSet></merger>

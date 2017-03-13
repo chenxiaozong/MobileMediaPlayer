@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Home\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_03826d9849e527df308ef49c20b457ef3035949d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\01code\AS\MobileMediaPlayer\app\libs\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_f5773a490bd410bf8621f08307bbed05797287f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\01code\AS\MobileMediaPlayer\app\libs\glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\glide-3.7.0_f9942f68f7232ff7b31d4b7bf07aa326ae06d3c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\01code\AS\MobileMediaPlayer\xutils\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="92ffe66a050ff20e076d836960c0391ae760bfcd">
+        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_384b89944308b3676076fe681f108761fbd4372c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\18cdc4b1469d429aaab050b701954f791120bfa3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\build\intermediates\pre-dexed\debug\classes_e64651963aed6ff470fd375286b2cf6b896ff2c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\01code\AS\MobileMediaPlayer\vitamio\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d9adca53045e913ba64b87dd9e3368e9a97fa86f">
+        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_968747e9acc459857113afa376498eb21f4e8254.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\01code\AS\MobileMediaPlayer\EventBus\build\libs\eventbus-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bcd33d67ce1145784f0981d3ea74a8ec36d91889">
+        <dex dex="D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\build\intermediates\pre-dexed\debug\eventbus-3.0.0_dcdb78fe2e69dd5e69a4c2f7bf06cf05ffb37503.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Android\.android\build-cache\18cdc4b1469d429aaab050b701954f791120bfa3\output\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_1e4101c087d8cfd702d777be2fe37ad74b7efb40.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_system_media_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+
+    tools:context="com.example.chen.mobilemediaplayer.activity.SystemMediaPlayerActivity">
+
+    <com.example.chen.mobilemediaplayer.view.VideoView
+        android:layout_centerInParent="true"
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--media controler -->
+    <include layout="@layout/system_media_controler"
+        android:id="@+id/ll_system_media_controller"/>
+
+
+    <!--网络视频卡顿提示-->
+    <include layout="@layout/system_media_buffer"
+        android:id="@+id/ll_media_buffer"/>
+
+
+    <!--视频加载提示-->
+    <include layout="@layout/ll_media_loading"
+        android:id="@+id/ll_media_loading"/>
+
+
+
+</RelativeLayout>
