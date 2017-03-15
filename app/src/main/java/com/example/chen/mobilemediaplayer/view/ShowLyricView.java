@@ -10,7 +10,10 @@ import android.util.Log;
 import android.widget.TextView;
 
 import com.example.chen.mobilemediaplayer.domain.Lyric;
+import com.example.chen.mobilemediaplayer.utils.DensityUtils;
 import com.example.chen.mobilemediaplayer.utils.LrcUtils;
+
+import org.xutils.common.util.DensityUtil;
 
 import java.io.File;
 
@@ -34,7 +37,7 @@ public class ShowLyricView extends TextView {
     private int width;
     private int hight;
     private int index ; //当前行在歌词列表中的索引
-    private int textHight = 20; //一行歌词文本所占高度
+    private int textHight ; //一行歌词文本所占高度
     private int showTime; //某一行应该显示的时间
     private int timePoint; //某一行开始显示的时间戳
 
@@ -62,7 +65,7 @@ public class ShowLyricView extends TextView {
     public ShowLyricView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
-        initView();
+        initView(context);
 
 
     }
@@ -70,12 +73,16 @@ public class ShowLyricView extends TextView {
     /**
      * 初始化试图
      */
-    private void initView() {
+    private void initView(Context context) {
+        textHight = DensityUtils.dip2px(context,16);//15dp -->像素
+
+        Log.d("ShowLyricView", "textHight:" + textHight);
+
         setLyricUrl(lyricUrl);
 
         paint = new Paint();
         paint.setColor(Color.GREEN);
-        paint.setTextSize(20);
+        paint.setTextSize(textHight+5);
 
         paint.setAntiAlias(true);       //设置抗锯齿
         paint.setTextAlign(Paint.Align.CENTER);//居中对齐
@@ -83,7 +90,7 @@ public class ShowLyricView extends TextView {
 
         whitePaint = new Paint();
         whitePaint.setColor(Color.WHITE);
-        whitePaint.setTextSize(20);
+        whitePaint.setTextSize(textHight);
 
         whitePaint.setAntiAlias(true);       //设置抗锯齿
         whitePaint.setTextAlign(Paint.Align.CENTER);//居中对齐
@@ -129,7 +136,7 @@ public class ShowLyricView extends TextView {
             int tempY = hight / 2;
             for (int i = index - 1; i > 0; i--) {
                 String preContent = lyric.getLineLyrics().get(i).getContent();
-                tempY = tempY - textHight;
+                tempY = tempY - textHight-textHight/2; //textHight/4 为设置的行间距
                 if (tempY < 0) {
                     break;
                 }
@@ -140,7 +147,7 @@ public class ShowLyricView extends TextView {
             tempY = hight / 2;
             for (int i = index + 1; i < lyric.getLineLyrics().size(); i++) {
                 String preContent = lyric.getLineLyrics().get(i).getContent();
-                tempY = tempY + textHight;
+                tempY = tempY + textHight+textHight/2;
                 if (tempY > hight) {
                     break;
                 }

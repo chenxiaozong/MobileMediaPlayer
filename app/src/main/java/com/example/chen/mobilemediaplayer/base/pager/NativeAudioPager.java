@@ -118,7 +118,7 @@ public class NativeAudioPager extends BaseFragment {
 
     /**
      * 1. 扫描本地音乐数据:
-     * 2. 其中音乐歌词文件默认设置为:String.valueOf(Environment.getExternalStorageDirectory() + "/beijing.txt")
+     * 2. 其中歌词文件地址可以根据歌词路径下创建 lyrics 文件夹下
      */
     private void getDataFromLocal() {
 
@@ -152,7 +152,6 @@ public class NativeAudioPager extends BaseFragment {
                         String artist = cursor.getString(4);
 
                         MediaItem mediaItem = new MediaItem(name,artist,data,size,duration);
-                        mediaItem.setLyricUrl(lyricUrl);
                         mediaItems.add(mediaItem);//将视频添加到list
                     }
                     cursor.close();

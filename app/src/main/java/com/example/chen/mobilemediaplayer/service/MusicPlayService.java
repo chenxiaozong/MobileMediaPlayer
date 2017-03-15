@@ -313,7 +313,7 @@ public class MusicPlayService extends Service {
      * 得到音频路径
      */
     private String getAudioPath() {
-        return null;
+        return items.get(position).getData();//返回文件路径
     }
 
     /**

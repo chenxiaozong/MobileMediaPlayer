@@ -90,13 +90,17 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
                     try {
 
                         if (isNewLyric) {//需要更新歌词地址
-                            int itemIndex = service.getAudioItemIndex();//默认返回值0
-                            if (audioItems.get(itemIndex).getLyricUrl() != null) {
-                                tvMusicLyrics.setLyricUrl(audioItems.get(itemIndex).getLyricUrl());
-                            }
+                            //歌曲路径: "/storage/sdcard0/刘惜君 - 悠蓝曲.mp3"
+                            //storage/sdcard0/刘惜君 - 悠蓝曲.+.lrc (.txt)
+                            String audioPath = service.getAudioPath();
+                            String path = audioPath.substring(0,audioPath.lastIndexOf("."));
+                            String lyricPath = path+".lrc";
+                            tvMusicLyrics.setLyricUrl(lyricPath);
 
                             isNewLyric = false;
                         }
+
+
                         //1. 获取当前进度
                         int timePoint = service.getCurrentProgress();//得到当前时间
                         //2. 将进度传入ShowLyricView.java-->index
