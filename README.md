@@ -76,9 +76,9 @@
 
 >4.2 需要发送handler消息更新歌词的情况
 
-          1) 当播放完一首歌曲,进行下一曲播放时   歌曲准备完成广播:---->onrecevier() 中发送handler消息更新进度
+    1) 当播放完一首歌曲,进行下一曲播放时   歌曲准备完成广播:---->onrecevier() 中发送handler消息更新进度
 
-          2) 当从通知栏进入播放界面时         播放器service连接:----->onServiceConnecteddfaf
+    2) 当从通知栏进入播放界面时         播放器service连接:----->onServiceConnecteddfaf
 
 5 实现歌词平滑移动
 
@@ -204,4 +204,35 @@
     }
 ```
 
+
+#### 14设置两次点击退出
+> 1. 添加按键监听:
+  2. 点击一次返回键-->进入第一个页面(本地视频)
+  3. 两秒内连续点击-->退出应用
+
+```
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (position != 0) {//如果当前页面不是第一页-->跳转到第一页
+            position = 0;
+            //setFragment();//设置显示第一个页面
+            rg_main.check(R.id.rb_main_native_video);
+            return true;//消费返回键
+        } else if (!isExit) {
+            Toast.makeText(this, "再按一次返回键退出", Toast.LENGTH_SHORT).show();
+            isExit = true;
+            //发送两秒后的延时-->将isExit zhiwei置为false
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    isExit = false;
+                }
+            }, 2000);
+            return true;
+
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+```
 
