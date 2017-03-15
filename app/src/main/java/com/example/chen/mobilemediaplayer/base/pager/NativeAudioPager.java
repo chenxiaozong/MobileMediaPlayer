@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
@@ -14,7 +15,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
@@ -22,17 +22,18 @@ import android.widget.TextView;
 
 import com.example.chen.mobilemediaplayer.R;
 import com.example.chen.mobilemediaplayer.activity.AudioPlayerActivity;
-import com.example.chen.mobilemediaplayer.activity.SystemMediaPlayerActivity;
 import com.example.chen.mobilemediaplayer.adapter.AudioItemAdapter;
 import com.example.chen.mobilemediaplayer.base.BaseFragment;
 import com.example.chen.mobilemediaplayer.domain.MediaItem;
 
 import java.util.ArrayList;
-import java.util.IllegalFormatCodePointException;
 
 /**
  * Created by chen on 2017/1/7.
  * 本地音频
+ * adapter中歌词的默认地址:     private String lyricUrl = String.valueOf(Environment.getExternalStorageDirectory() + "/beijing.txt")
+ *
+ *
  */
 
 public class NativeAudioPager extends BaseFragment {
@@ -69,6 +70,7 @@ public class NativeAudioPager extends BaseFragment {
 
         }
     };
+
 
 
     public NativeAudioPager(Context context) {
@@ -116,12 +118,15 @@ public class NativeAudioPager extends BaseFragment {
 
     /**
      * 1. 扫描本地音乐数据:
+     * 2. 其中音乐歌词文件默认设置为:String.valueOf(Environment.getExternalStorageDirectory() + "/beijing.txt")
      */
     private void getDataFromLocal() {
 
         mediaItems = new ArrayList<>();
 
         new Thread(){
+        String lyricUrl = String.valueOf(Environment.getExternalStorageDirectory() + "/beijing.txt");
+
             @Override
             public void run() {
                 super.run();
@@ -147,6 +152,7 @@ public class NativeAudioPager extends BaseFragment {
                         String artist = cursor.getString(4);
 
                         MediaItem mediaItem = new MediaItem(name,artist,data,size,duration);
+                        mediaItem.setLyricUrl(lyricUrl);
                         mediaItems.add(mediaItem);//将视频添加到list
                     }
                     cursor.close();

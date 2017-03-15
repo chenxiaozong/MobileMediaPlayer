@@ -17,7 +17,7 @@ ADDED from D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\AndroidMan
 		ADDED from D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.3.0] C:\Android\.android\build-cache\18cdc4b1469d429aaab050b701954f791120bfa3\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] C:\Android\.android\build-cache\056463643ec21ffeb3716273fb90e83b7cb06c88\output\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		ADDED from D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\AndroidManifest.xml
@@ -28,7 +28,7 @@ MERGED from [com.android.support:support-v4:23.3.0] C:\Android\.android\build-ca
 		INJECTED from D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\AndroidManifest.xml
 application
 ADDED from D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\AndroidManifest.xml:11:5-29:19
-MERGED from [com.android.support:support-v4:23.3.0] C:\Android\.android\build-cache\18cdc4b1469d429aaab050b701954f791120bfa3\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] C:\Android\.android\build-cache\056463643ec21ffeb3716273fb90e83b7cb06c88\output\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from D:\01code\AS\MobileMediaPlayer\EventBus3.0_Sample\src\main\AndroidManifest.xml:14:9-41
 	android:allowBackup

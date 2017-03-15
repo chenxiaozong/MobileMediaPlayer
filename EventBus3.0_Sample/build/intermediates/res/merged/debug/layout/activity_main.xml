@@ -10,4 +10,17 @@
         android:layout_height="wrap_content"
         android:text="btn_bty"/>
 
+
+    <TextView
+        android:id="@+id/tv_event_bus_msg"
+
+
+
+
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:hint="显示收到的Eventbus消息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

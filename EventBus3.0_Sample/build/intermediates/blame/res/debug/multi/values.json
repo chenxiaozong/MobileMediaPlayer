@@ -53,9 +53,9 @@
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 164,
+                        "startOffset": 160,
                         "endColumn": 52,
-                        "endOffset": 212
+                        "endOffset": 208
                     }
                 }
             },
@@ -64,8 +64,8 @@
                     "startLine": 5,
                     "startColumn": 4,
                     "startOffset": 222,
-                    "endColumn": 49,
-                    "endOffset": 267
+                    "endColumn": 45,
+                    "endOffset": 263
                 },
                 "from": {
                     "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\strings.xml",
@@ -73,8 +73,8 @@
                         "startLine": 3,
                         "startColumn": 4,
                         "startOffset": 59,
-                        "endColumn": 49,
-                        "endOffset": 104
+                        "endColumn": 45,
+                        "endOffset": 100
                     }
                 }
             },
@@ -82,18 +82,18 @@
                 "to": {
                     "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 272,
+                    "startOffset": 268,
                     "endColumn": 52,
-                    "endOffset": 320
+                    "endOffset": 316
                 },
                 "from": {
                     "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 110,
+                        "startOffset": 106,
                         "endColumn": 52,
-                        "endOffset": 158
+                        "endOffset": 154
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 325,
+                    "startOffset": 321,
                     "endColumn": 64,
-                    "endOffset": 385
+                    "endOffset": 381
                 },
                 "from": {
                     "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 218,
+                        "startOffset": 214,
                         "endColumn": 64,
-                        "endOffset": 278
+                        "endOffset": 274
                     }
                 }
             },
@@ -120,10 +120,10 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 390,
+                    "startOffset": 386,
                     "endLine": 14,
                     "endColumn": 12,
-                    "endOffset": 676
+                    "endOffset": 672
                 },
                 "from": {
                     "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\styles.xml",
@@ -141,10 +141,10 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 681,
+                    "startOffset": 677,
                     "endLine": 17,
                     "endColumn": 12,
-                    "endOffset": 836
+                    "endOffset": 832
                 },
                 "from": {
                     "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\styles.xml",

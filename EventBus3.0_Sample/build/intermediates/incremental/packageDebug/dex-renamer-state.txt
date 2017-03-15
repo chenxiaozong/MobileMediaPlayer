@@ -1,4 +1,0 @@
-#Mon Mar 13 15:23:49 CST 2017
-base.0=D\:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=D\:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

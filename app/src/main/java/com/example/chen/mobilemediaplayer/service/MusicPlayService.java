@@ -7,6 +7,7 @@ import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
 import android.support.annotation.Nullable;
@@ -32,7 +33,6 @@ public class MusicPlayService extends Service {
     //广播标志:通过广播更新界面
     public static final String OPEN_AUDIO = "com.example.chen.mobilemediaplayer_OPENAUDIO";
 
-
     /**
      * 设置音乐播放模式对应的标志:
      */
@@ -41,12 +41,6 @@ public class MusicPlayService extends Service {
     public static final int PLAY_MODEL_REPEATE = 12;//多曲循环
 
     public int playmodel = PLAY_MODEL_ORDER;//顺序循环播放播放
-
-
-
-
-
-
     private ArrayList<MediaItem> items;
     private int position; //点击音乐的index
 
@@ -156,6 +150,11 @@ public class MusicPlayService extends Service {
         public void seekTo(int position) throws RemoteException {
             service.seekTo(position);
         }
+
+        @Override
+        public int getAudioItemIndex() throws RemoteException {
+            return service.getAudioItemIndex();
+        }
     };
 
 
@@ -210,11 +209,14 @@ public class MusicPlayService extends Service {
         audioMediaPlayer.start();
         Log.d("MusicPlayService--", "start");
 
-         manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         Intent intent= new Intent(this,AudioPlayerActivity.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("videolist",items);// 通过通知栏,向intent 传入播放列表添加序列化 对象
+        intent.putExtras(bundle);
+
         intent.putExtra("isNotification",true);//标识来自通知栏的intent
-
-
         PendingIntent pendingIntent = PendingIntent.getActivity(this,1,intent,PendingIntent.FLAG_UPDATE_CURRENT);
         Notification notification = new Notification.Builder(this)
                 .setSmallIcon(R.drawable.app_icon)
@@ -321,6 +323,14 @@ public class MusicPlayService extends Service {
         return playmodel;
     }
 
+    /**
+     * 得到当前音乐在列表中的index
+     */
+
+    private int getAudioItemIndex(){
+        return this.position;
+    }
+
 
     /**
      * 设置播放模式
@@ -362,6 +372,7 @@ public class MusicPlayService extends Service {
             Intent intent = new Intent(action);
             intent.putExtra("position",position);//将当前音乐 index 通过广播发送到activity中
             sendBroadcast(intent);
+
         }
     }
 
@@ -392,6 +403,4 @@ public class MusicPlayService extends Service {
             return false;
         }
     }
-
-
 }

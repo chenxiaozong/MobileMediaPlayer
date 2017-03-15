@@ -27,6 +27,7 @@ import com.example.chen.mobilemediaplayer.R;
 import com.example.chen.mobilemediaplayer.domain.MediaItem;
 import com.example.chen.mobilemediaplayer.service.MusicPlayService;
 import com.example.chen.mobilemediaplayer.utils.TimeFormatUilts;
+import com.example.chen.mobilemediaplayer.view.ShowLyricView;
 
 import java.io.Serializable;
 import java.util.List;
@@ -40,7 +41,7 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
     private ImageView ivMusicPlaying;
     private TextView tvMusicName;
     private TextView tvMusicAuthor;
-    private TextView tvMusicLyrics;
+    private ShowLyricView tvMusicLyrics;
     private LinearLayout llAudioControlPad;
     private LinearLayout llAudioPlayingBar;
     private TextView tvAudioInfoCurrent;
@@ -70,10 +71,13 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
     //创建handler 发送1s 延时消息,更新播放进度和时间
     private final int UPDATE_PROGRESS = 1; //更新播放进度
 
+    private final int UPDATE_LYRIC = 2; //发送更新歌词消息
+    private boolean isNewLyric = false; //标识是否需要更新歌词地址(切换歌曲,或者从通知栏进入时需要更新地址)
+
 
     /**
      * 创建handler
-     * 1. 更新播放进度 和播放时间
+     * 1. 更新播放进度 和播放时间onse
      * 2.
      */
     private Handler handler = new Handler() {
@@ -81,14 +85,39 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
             switch (msg.what) {
+
+                case UPDATE_LYRIC://跟新显示歌词
+                    try {
+
+                        if (isNewLyric) {//需要更新歌词地址
+                            int itemIndex = service.getAudioItemIndex();//默认返回值0
+                            if (audioItems.get(itemIndex).getLyricUrl() != null) {
+                                tvMusicLyrics.setLyricUrl(audioItems.get(itemIndex).getLyricUrl());
+                            }
+
+                            isNewLyric = false;
+                        }
+                        //1. 获取当前进度
+                        int timePoint = service.getCurrentProgress();//得到当前时间
+                        //2. 将进度传入ShowLyricView.java-->index
+                        tvMusicLyrics.setTimePoint(timePoint);//设置时间-->index
+
+                        //3. 发送消息
+                        handler.removeMessages(UPDATE_LYRIC);
+                        handler.sendEmptyMessage(UPDATE_LYRIC);
+                    } catch (RemoteException e) {
+                        e.printStackTrace();
+                    }
+                    break;
+
                 case UPDATE_PROGRESS:
                     try {
                         int currentPosition = service.getCurrentProgress();//当前时长
                         int duration = (int) service.getDuration(); //总时长
-                        tvAudioInfoCurrent.setText(timeUtils.stringForTime(currentPosition));
+                        tvAudioInfoCurrent.setText(timeUtils.stringForTime(currentPosition));//跟进时间
 
                         sbAudioControllerPlayingProgress.setMax(duration);
-                        sbAudioControllerPlayingProgress.setProgress(currentPosition);
+                        sbAudioControllerPlayingProgress.setProgress(currentPosition);//更新播放进度
 
                     } catch (RemoteException e) {
                         e.printStackTrace();
@@ -112,7 +141,6 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
         @Override
         public void onServiceConnected(ComponentName name, IBinder binder) {
             service = IMusicPlayService.Stub.asInterface(binder);
-            Log.d("AudioPlayerActivity--", "connected"+service.getClass().getSimpleName());
             if (service != null) {
                 try {
                     //判断是否是通过通知栏启动的intent
@@ -120,10 +148,11 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
                         service.openAudio(position);
                     } else {//从通知栏进入播放音乐的service
                         showAudioInfoView();//显示歌曲信息(包含发送handler消息更新进度)
+                        isNewLyric = true;
+                        handler.sendEmptyMessage(UPDATE_LYRIC);//从通知栏进入
                     }
 
                     showButtonPlayModel();//更新播放模式按钮背景图标
-
                 } catch (RemoteException e) {
                     e.printStackTrace();
                 }
@@ -136,7 +165,6 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
          */
         @Override
         public void onServiceDisconnected(ComponentName name) {
-            Log.d("AudioPlayerActivity--", "disconnected"+service.getClass().getSimpleName());
             if (service != null) {
                 try {
                     service.stop();
@@ -190,7 +218,7 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
         ivMusicPlaying = (ImageView) findViewById(R.id.iv_music_playing);
         tvMusicName = (TextView) findViewById(R.id.tv_music_name);
         tvMusicAuthor = (TextView) findViewById(R.id.tv_music_author);
-        tvMusicLyrics = (TextView) findViewById(R.id.tv_music_lyrics);
+        tvMusicLyrics = (ShowLyricView) findViewById(R.id.tv_music_lyrics);
         llAudioControlPad = (LinearLayout) findViewById(R.id.ll_audio_control_pad);
         llAudioPlayingBar = (LinearLayout) findViewById(R.id.ll_audio_playing_bar);
         tvAudioInfoCurrent = (TextView) findViewById(R.id.tv_audio_info_current);
@@ -270,10 +298,10 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
             } else if (playmodel == MusicPlayService.PLAY_MODEL_SINGLE) {//切换到单曲循环
                 playmodel = MusicPlayService.PLAY_MODEL_REPEATE;
                 Toast.makeText(this, "循环播放", Toast.LENGTH_SHORT).show();
-            }else if(playmodel ==MusicPlayService.PLAY_MODEL_REPEATE) {
+            } else if (playmodel == MusicPlayService.PLAY_MODEL_REPEATE) {
                 playmodel = MusicPlayService.PLAY_MODEL_ORDER;
                 Toast.makeText(this, "顺序播放", Toast.LENGTH_SHORT).show();
-            }else {
+            } else {
                 playmodel = MusicPlayService.PLAY_MODEL_ORDER;
             }
             service.setPlayModel(playmodel);
@@ -318,10 +346,8 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
                     //暂停
                     //按钮--->指示播放
                     service.pause();
-                    Log.d("AudioPlayerActivity--", "isplaying:" + isPlaying);
                     btControllerPause.setBackgroundResource(R.drawable.music_play_start_selector);
                 } else {
-                    Log.d("AudioPlayerActivity--", "isplaying:" + isPlaying);
                     //开始播放
                     //按钮--->指示暂停
                     service.start();
@@ -341,6 +367,9 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
 
     /**
      * 启动并绑定服务
+     * 运行情况:
+     * 1. 点击item 进入播放界面
+     * 2. 通过通知栏进入界面
      */
     private void startBindService() {
         Intent intent = new Intent(this, MusicPlayService.class);
@@ -358,12 +387,14 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
 
         startService(intent);//使用此方法,防止实例化多个service
 
+
     }
 
     /**
      * 从Inten中得到音乐列表信息
      */
     private void getDataFromIntent() {
+        //从音乐列表页进入 或从通知栏进入时 需要获取数据
         audioItems = (List<MediaItem>) this.getIntent().getSerializableExtra("videolist");
 
         isNotification = this.getIntent().getBooleanExtra("isNotification", false);//是否从通知栏启动
@@ -391,11 +422,14 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
      * 2.跟新界面音乐播放模式的按钮状态
      */
     private class AudioReceiver extends BroadcastReceiver {
+
         @Override
         public void onReceive(Context context, Intent intent) {
             //int index = intent.getIntExtra("position",0);
             showAudioInfoView();//更新音乐信息---歌曲时长,演唱者,歌曲名
-            Log.d("AudioReceiver11", "onReceive");
+
+            isNewLyric = true;
+            handler.sendEmptyMessage(UPDATE_LYRIC);// 准备好歌曲后 发送handler通知更新歌词--切换歌曲,更新进度
         }
     }
 
@@ -426,11 +460,9 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
         super.onDestroy();
         handler.removeCallbacksAndMessages(null);//null 表示移除所有消息和回调
 
-        Log.d("AudioPlayerActivity", this.getLocalClassName()+"onDestroy()" );
-
 
         //解绑服务
-        if(connection!=null) {
+        if (connection != null) {
             unbindService(connection);
             connection = null;
         }

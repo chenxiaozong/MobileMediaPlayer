@@ -93,5 +93,9 @@ interface IMusicPlayService {
      * @param position
      */
     void seekTo(int position);
+    /**
+     * 得到当前音乐在列表中的index
+     */
 
+     int getAudioItemIndex();
 }

@@ -21,6 +21,17 @@ public class MediaItem implements Serializable {
     private String descSummary;   //视频描述
     private String imageUrl;
 
+    private String lyricUrl;//歌词或者字幕文件路径
+
+    public String getLyricUrl() {
+        return lyricUrl;
+    }
+
+    public void setLyricUrl(String lyricUrl) {
+        this.lyricUrl = lyricUrl;
+    }
+
+
 
 
     public MediaItem() {
