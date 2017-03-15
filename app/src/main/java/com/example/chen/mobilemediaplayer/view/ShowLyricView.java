@@ -34,12 +34,12 @@ public class ShowLyricView extends TextView {
 
 
 
-    private int width;
-    private int hight;
+    private float width;
+    private float hight;
     private int index ; //当前行在歌词列表中的索引
-    private int textHight ; //一行歌词文本所占高度
-    private int showTime; //某一行应该显示的时间
-    private int timePoint; //某一行开始显示的时间戳
+    private float textHight ; //一行歌词文本所占高度
+    private float showTime; //某一行应该显示的时间
+    private float pushTime = 0;   //当前播放时间点
 
 /*    public ShowLyricView(Context context) {
         super(context);
@@ -127,13 +127,29 @@ public class ShowLyricView extends TextView {
 
         //当歌词不为空时, 绘制歌词
         if (lyric != null) {
+            //根据歌词显示时间,平移画布,实现歌词平滑移动
+            /**
+             * 原理:
+             * 1.  当前句已经显示时间 /显示时间 =  平移高度 / 行的高度
+             *  --> pushTime /showTime = push/textHight
+             *  --> pushTime == (current - lyric.getLineLyrics().get(index).getTimePoint());
+             */
+
+            float pushHight;
+            if(showTime==0) {
+                pushHight = 0;
+            }else {
+                pushHight= (pushTime/showTime)*textHight+textHight ;
+            }
+            canvas.translate(0,-pushHight);
 
             //1. 绘制当前行歌词
             String lineContent = lyric.getLineLyrics().get(index).getContent();//index 对应行的歌词内容
             canvas.drawText(lineContent, width / 2, hight / 2, paint);
 
-            //2. 绘制之前歌词
-            int tempY = hight / 2;
+
+            //前歌词
+            float tempY = hight / 2;
             for (int i = index - 1; i > 0; i--) {
                 String preContent = lyric.getLineLyrics().get(i).getContent();
                 tempY = tempY - textHight-textHight/2; //textHight/4 为设置的行间距
@@ -178,6 +194,7 @@ public class ShowLyricView extends TextView {
                 if(current>=pre&&current<p) {
                     index = i-1;
                     showTime = (int) lyric.getLineLyrics().get(index).getShowTtime();
+                    pushTime = (int) (current - lyric.getLineLyrics().get(index).getTimePoint());
                     break;
                 }
             }
