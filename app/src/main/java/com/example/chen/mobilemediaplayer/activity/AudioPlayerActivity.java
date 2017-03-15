@@ -438,11 +438,12 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
     }
 
     /**
-     * 显示播放界面的音乐信息
+     * 显示播放界面的音乐信息-->①从列表点进入 ② 通知栏进入() ③ 播放下一曲(上一曲) 进入
      * 1. 显示演唱者
      * 2. 显示歌曲名
      * 3. 显示歌曲时长
      * 4. 发送延时1s 的handler消息 更新进度
+     * 5. 校验播放按钮状态
      */
     private void showAudioInfoView() {
         try {
@@ -455,8 +456,33 @@ public class AudioPlayerActivity extends Activity implements View.OnClickListene
             e.printStackTrace();
         }
         Log.d("AudioReceiver11", "showAudioInfoView()");
+
+        checkPlayButton();//校验播放按钮状态
         //发送消息更新进度和时间
         handler.sendEmptyMessage(UPDATE_PROGRESS);
+
+
+    }
+
+    /**
+     * 校验播放按钮状态:
+     * 1. 暂停时播放下一曲 -->更新播放按钮状态
+     * 2. 从通知栏进入时,更新播放按钮状态
+     */
+    private void checkPlayButton() {
+        try {
+            isPlaying = service.isPlaying();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        }
+
+        if(isPlaying) {//正在播放
+            btControllerPause.setBackgroundResource(R.drawable.music_play_pause_selector);
+        }else {//没有播放--暂停状态-->显示播放按钮
+            btControllerPause.setBackgroundResource(R.drawable.music_play_start_selector);
+
+        }
+
     }
 
     @Override

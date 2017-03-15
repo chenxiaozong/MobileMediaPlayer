@@ -75,7 +75,9 @@
 ```
 
 >4.2 需要发送handler消息更新歌词的情况
+
           1) 当播放完一首歌曲,进行下一曲播放时   歌曲准备完成广播:---->onrecevier() 中发送handler消息更新进度
+
           2) 当从通知栏进入播放界面时         播放器service连接:----->onServiceConnecteddfaf
 
 5 实现歌词平滑移动
