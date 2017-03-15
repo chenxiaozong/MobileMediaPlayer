@@ -36,16 +36,15 @@
 #### 08任务栏显示音乐播放
 #### 09 解决bug
 #### 10通知栏多次点击bug
-#### 11设置播放模式 
+#### 11设置播放模式
 #### 12上一首下一首
 #### 13歌词显示
 1. 创建歌词文件对应的bean 对象
 2. 创建utils 实现从歌词文件中读取歌词
 3. 创建显示歌词的textview
 4. 播放器activity : AudioPlayerActivity.java 中发送handler消息, 更新歌词
-	4.1 handler代码:
-	
 
+>4.1 handler代码:
 
 ```
     case UPDATE_LYRIC://跟新显示歌词
@@ -73,20 +72,15 @@
                             e.printStackTrace();
                         }
                         break;
-
-
-
 ```
 
-
-4.2 需要发送handler消息更新歌词的情况
+>4.2 需要发送handler消息更新歌词的情况
           1) 当播放完一首歌曲,进行下一曲播放时   歌曲准备完成广播:---->onrecevier() 中发送handler消息更新进度
-          2) 当从通知栏进入播放界面时         播放器service连接:----->onServiceConnecteddfaf 
+          2) 当从通知栏进入播放界面时         播放器service连接:----->onServiceConnecteddfaf
 
+5 实现歌词平滑移动
 
-5. 实现歌词平滑移动
-
-    ```
+```
         @Override
         protected void onDraw(Canvas canvas) {
             super.onDraw(canvas);
@@ -135,7 +129,77 @@
                 canvas.drawText("没有歌词", width / 2, hight / 2, paint);
             }
         }
-    ```
 
+```
+
+6 判断文件编码:
+
+```
+
+    /**
+     * 获取文件编码
+     * @param file
+     * @return
+     */
+    private String getCharset(File file) {
+        String charset = "GBK";
+        byte[] first3Bytes = new byte[3];
+        try {
+            boolean checked = false;
+            BufferedInputStream bis = new BufferedInputStream(
+                    new FileInputStream(file));
+            bis.mark(0);
+            int read = bis.read(first3Bytes, 0, 3);
+            if (read == -1)
+                return charset;
+            if (first3Bytes[0] == (byte) 0xFF && first3Bytes[1] == (byte) 0xFE) {
+                charset = "UTF-16LE";
+                checked = true;
+            } else if (first3Bytes[0] == (byte) 0xFE
+                    && first3Bytes[1] == (byte) 0xFF) {
+                charset = "UTF-16BE";
+                checked = true;
+            } else if (first3Bytes[0] == (byte) 0xEF
+                    && first3Bytes[1] == (byte) 0xBB
+                    && first3Bytes[2] == (byte) 0xBF) {
+                charset = "UTF-8";
+                checked = true;
+            }
+            bis.reset();
+            if (!checked) {
+                int loc = 0;
+                while ((read = bis.read()) != -1) {
+                    loc++;
+                    if (read >= 0xF0)
+                        break;
+                    if (0x80 <= read && read <= 0xBF)
+                        break;
+                    if (0xC0 <= read && read <= 0xDF) {
+                        read = bis.read();
+                        if (0x80 <= read && read <= 0xBF)
+                            continue;
+                        else
+                            break;
+                    } else if (0xE0 <= read && read <= 0xEF) {
+                        read = bis.read();
+                        if (0x80 <= read && read <= 0xBF) {
+                            read = bis.read();
+                            if (0x80 <= read && read <= 0xBF) {
+                                charset = "UTF-8";
+                                break;
+                            } else
+                                break;
+                        } else
+                            break;
+                    }
+                }
+            }
+            bis.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return charset;
+    }
+```
 
 
