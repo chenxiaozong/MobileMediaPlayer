@@ -104,6 +104,8 @@
             </intent-filter>
         </service>
 
+
+        <activity android:name=".view.SearchActivity"/>
     </application>
 
 </manifest>

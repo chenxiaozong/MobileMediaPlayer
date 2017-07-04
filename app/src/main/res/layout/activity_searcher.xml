@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center"
+        android:padding="3dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <!--搜素-->
+    <TextView
+        android:id="@+id/tv_title_search"
+        android:layout_marginLeft="5dp"
+        android:text="全网搜索"
+        android:textSize="14sp"
+        android:textColor="@drawable/tv_drawable_textcolor_selector"
+        android:drawableLeft="@drawable/tv_drawable_seacher_selector"
+        android:background="@drawable/tv_drawable_background_selector"
+
+
+        android:drawablePadding="10dp"
+        android:clickable="true"
+
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_title_voice_search"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/voice_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:text="搜索"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_search_result_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        <ProgressBar
+            android:id="@+id/pb_search_progress"
+
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_search_no_content"
+
+            android:visibility="gone"
+            android:text="没有要搜索的内容"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

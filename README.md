@@ -1,10 +1,10 @@
-影音播放器
 
+[TOC]
 
+```````****```````影音播放器
+>功能说明:
 
-
-功能说明:
->1. 播放本地视频
+1. 播放本地视频
     1)系统解码
     2)vitamio万能解码
 2. 播放本地音乐
@@ -39,14 +39,14 @@
 #### 11设置播放模式
 #### 12上一首下一首
 #### 13歌词显示
-1. 创建歌词文件对应的bean 对象
-2. 创建utils 实现从歌词文件中读取歌词
-3. 创建显示歌词的textview
-4. 播放器activity : AudioPlayerActivity.java 中发送handler消息, 更新歌词
+##### 1. 创建歌词文件对应的bean 对象
+##### 2. 创建utils 实现从歌词文件中读取歌词
+##### 3. 创建显示歌词的textview
+##### 4. 播放器activity : AudioPlayerActivity.java 中发送handler消息, 更新歌词
 
 >4.1 handler代码:
 
-```
+```java
     case UPDATE_LYRIC://跟新显示歌词
                         try {
                             if (isNewLyric) {//需要更新歌词地址
@@ -80,7 +80,7 @@
 
     2) 当从通知栏进入播放界面时         播放器service连接:----->onServiceConnecteddfaf
 
-5 实现歌词平滑移动
+#####5 实现歌词平滑移动
 
 ```
         @Override
@@ -134,7 +134,7 @@
 
 ```
 
-6 判断文件编码:
+##### 6 判断文件编码:
 
 ```
 

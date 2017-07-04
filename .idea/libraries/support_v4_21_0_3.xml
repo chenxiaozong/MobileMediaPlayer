@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="support-v4-21.0.3">
     <CLASSES>
-      <root url="jar://C:/Android/.android/build-cache/4680db57aad6af847c742c8175ebf8294b6ecbd9/output/jars/libs/internal_impl-21.0.3.jar!/" />
-      <root url="file://C:/Android/.android/build-cache/4680db57aad6af847c742c8175ebf8294b6ecbd9/output/res" />
-      <root url="jar://C:/Android/.android/build-cache/4680db57aad6af847c742c8175ebf8294b6ecbd9/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/5da2fd488b7e9ba13930730aea3152b46950f08e/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/5da2fd488b7e9ba13930730aea3152b46950f08e/output/jars/libs/internal_impl-21.0.3.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/5da2fd488b7e9ba13930730aea3152b46950f08e/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar://C:/Home/Android/sdk/extras/android/m2repository/com/android/support/support-v4/21.0.3/support-v4-21.0.3-sources.jar!/" />
+      <root url="jar://D:/home/Android/sdk/extras/android/m2repository/com/android/support/support-v4/21.0.3/support-v4-21.0.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

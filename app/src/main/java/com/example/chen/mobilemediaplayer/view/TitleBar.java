@@ -1,6 +1,7 @@
 package com.example.chen.mobilemediaplayer.view;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -82,13 +83,17 @@ public class TitleBar extends LinearLayout implements View.OnClickListener {
         switch (v.getId()){
             case R.id.tv_title:
                 Toast.makeText(context, "搜索", Toast.LENGTH_SHORT).show();
-                Log.d("TitleBar", "搜索");
+
+                Intent intent = new Intent(context,SearchActivity.class);
+                context.startActivity(intent);
+
+
             break;
             case R.id.rl_title_game:
-                Log.d("TitleBar", "游戏");
+                Toast.makeText(context, "游戏", Toast.LENGTH_SHORT).show();
             break;
             case R.id.iv_title_record:
-                Log.d("TitleBar", "记录");
+                Toast.makeText(context, "记录", Toast.LENGTH_SHORT).show();
             break;
         }
     }
