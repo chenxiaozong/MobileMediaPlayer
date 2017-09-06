@@ -1,18 +1,20 @@
 package com.example.chen.mobilemediaplayer.adapter;
 
 import android.content.Context;
+import android.net.Uri;
 import android.text.format.Formatter;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.chen.mobilemediaplayer.R;
 import com.example.chen.mobilemediaplayer.domain.MediaItem;
 import com.example.chen.mobilemediaplayer.utils.TimeFormatUilts;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -72,6 +74,12 @@ public class VideoItemAdapter extends BaseAdapter {
         //文件大小 ---转换-->字符串
         String filesize = Formatter.formatFileSize(context,item.getSize());
         holder.tv_video_item_size.setText(filesize);
+
+
+        //使用glide 加载视频快照
+        File moveFile = new File(item.getData());
+        Uri moveUri = Uri.fromFile(moveFile);
+        Glide.with(context).load(moveUri).into(holder.im_video_item);
 
 
 

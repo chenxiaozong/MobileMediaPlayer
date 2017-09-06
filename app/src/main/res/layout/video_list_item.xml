@@ -4,16 +4,20 @@
     android:padding="3dp"
     android:layout_width="match_parent"
 
-    android:layout_height="wrap_content">
+    android:layout_height="60dp">
 
 
     <ImageView
         android:id="@+id/im_video_item"
         android:src="@drawable/video_default_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
     <RelativeLayout
         android:padding="3dp"
+
+        android:layout_gravity="center_vertical"
         android:layout_marginLeft="5dp"
         android:gravity="center_vertical"
         android:layout_width="match_parent"

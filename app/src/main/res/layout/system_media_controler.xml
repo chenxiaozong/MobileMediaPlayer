@@ -66,6 +66,8 @@
             android:id="@+id/bt_video_controller_voice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
             android:background="@drawable/btn_voice_selector" />
 
 
@@ -74,9 +76,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:maxHeight="6dp"
-            android:minHeight="6dp"
-            android:progress="50"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:progress="0"
 
             android:progressDrawable="@drawable/seekbar_progress_background"
             android:thumb="@drawable/progress_thumb" />
@@ -114,7 +116,8 @@
             android:id="@+id/ll_video_playing_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/bg_player_top_control"
+            android:background="@color/transparent"
+
             android:gravity="center">
 
             <TextView
@@ -133,8 +136,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:maxHeight="6dp"
-                android:minHeight="6dp"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
                 android:progress="0"
 
                 android:progressDrawable="@drawable/seekbar_progress_background"
@@ -154,10 +157,12 @@
         <!--底部按钮 播放控制-->
         <LinearLayout
             android:id="@+id/ll_video_controller_play"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
             android:background="@android:color/transparent"
 
+
+            android:layout_gravity="center_horizontal"
             android:gravity="center_vertical">
 
             <Button

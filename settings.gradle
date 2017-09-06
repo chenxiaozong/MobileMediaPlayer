@@ -1,2 +1,2 @@
-include ':app', ':vitamio', ':xutils', ':xutils3_sample', ':test', ':AgoraDemo', ':EventBus3.0_Sample', ':EventBus', ':lyrictest'
+include ':app', ':vitamio', ':xutils', ':test', ':AgoraDemo', ':EventBus3.0_Sample', ':EventBus', ':lyrictest'
 include ':xListView'

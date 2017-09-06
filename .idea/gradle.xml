@@ -18,7 +18,6 @@
             <option value="$PROJECT_DIR$/vitamio" />
             <option value="$PROJECT_DIR$/xListView" />
             <option value="$PROJECT_DIR$/xutils" />
-            <option value="$PROJECT_DIR$/xutils3_sample" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

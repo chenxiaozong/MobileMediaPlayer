@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="D:\01code\AS\MobileMediaPlayer\vitamio\src\main\assets"/><source path="D:\01code\AS\MobileMediaPlayer\vitamio\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="D:\01code\AS\MobileMediaPlayer\vitamio\src\debug\assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/vitamio/src/main/assets"/><source path="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/vitamio/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/vitamio/src/debug/assets"/></dataSet></merger>

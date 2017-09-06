@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -10,14 +11,14 @@
     tools:context="com.example.chen.mobilemediaplayer.MainActivity">
 
     <!--标题栏-->
-    <include layout="@layout/title_bar"/>
-    
+    <include layout="@layout/title_bar" />
+
     <!--中间fragment-->
     <FrameLayout
         android:id="@+id/fl_main_content"
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
     </FrameLayout>
 
@@ -25,76 +26,47 @@
 
     <RadioGroup
         android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
         android:orientation="horizontal"
-        android:padding="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:padding="5dp">
 
 
         <RadioButton
             android:id="@+id/rb_main_native_video"
-            android:text="本地视频"
-
+            style="@style/bottom_rb_style"
             android:drawableTop="@drawable/rb_selecter_native_video"
+            android:text="本地视频"
             android:textColor="@drawable/rb_selector_text_color"
 
-            android:drawablePadding="3dp"
-            android:textSize="10sp"
-
-            android:button="@android:color/transparent"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
-
-
+            />
 
 
         <RadioButton
             android:id="@+id/rb_main_native_audio"
-            android:text="网络视频"
-            android:gravity="center"
+            style="@style/bottom_rb_style"
             android:drawableTop="@drawable/rb_selecter_native_audio"
-
-            android:button="@android:color/transparent"
-            android:textColor="@drawable/rb_selector_text_color"
-            android:drawablePadding="3dp"
-            android:textSize="10sp"
-
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:text="网络视频"
+            android:textColor="@drawable/rb_selector_text_color" />
 
         <RadioButton
             android:id="@+id/rb_main_net_video"
-            android:text="网络视频"
-            android:gravity="center"
+            style="@style/bottom_rb_style"
             android:drawableTop="@drawable/rb_selecter_net_audio"
-
-            android:button="@android:color/transparent"
+            android:text="网络视频"
             android:textColor="@drawable/rb_selector_text_color"
-            android:drawablePadding="3dp"
-            android:textSize="10sp"
 
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            />
 
         <RadioButton
             android:id="@+id/rb_main_net_audio"
-            android:text="网络音乐"
-            android:textSize="10sp"
-            android:gravity="center"
+            style="@style/bottom_rb_style"
             android:drawableTop="@drawable/rb_selector_net_audio"
+            android:text="网络音乐"
 
-            android:button="@android:color/transparent"
-            android:textColor="@drawable/rb_selector_text_color"
-            android:drawablePadding="3dp"
 
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content" />
+            android:textColor="@drawable/rb_selector_text_color" />
 
     </RadioGroup>
 

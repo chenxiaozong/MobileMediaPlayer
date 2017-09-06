@@ -1,18 +1,18 @@
 [
     {
-        "merged": "D:\\01code\\AS\\MobileMediaPlayer\\xListView\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_footer.xml",
-        "source": "D:\\01code\\AS\\MobileMediaPlayer\\xListView\\src\\main\\res\\layout\\xlistview_footer.xml"
+        "merged": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xListView/build/intermediates/res/merged/debug/layout/xlistview_header.xml",
+        "source": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xListView/src/main/res/layout/xlistview_header.xml"
     },
     {
-        "merged": "D:\\01code\\AS\\MobileMediaPlayer\\xListView\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "D:\\01code\\AS\\MobileMediaPlayer\\xListView\\src\\main\\res\\layout\\main.xml"
+        "merged": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xListView/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xListView/src/main/res/layout/main.xml"
     },
     {
-        "merged": "D:\\01code\\AS\\MobileMediaPlayer\\xListView\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
-        "source": "D:\\01code\\AS\\MobileMediaPlayer\\xListView\\src\\main\\res\\layout\\list_item.xml"
+        "merged": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xListView/build/intermediates/res/merged/debug/layout/xlistview_footer.xml",
+        "source": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xListView/src/main/res/layout/xlistview_footer.xml"
     },
     {
-        "merged": "D:\\01code\\AS\\MobileMediaPlayer\\xListView\\build\\intermediates\\res\\merged\\debug\\layout\\xlistview_header.xml",
-        "source": "D:\\01code\\AS\\MobileMediaPlayer\\xListView\\src\\main\\res\\layout\\xlistview_header.xml"
+        "merged": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xListView/build/intermediates/res/merged/debug/layout/list_item.xml",
+        "source": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xListView/src/main/res/layout/list_item.xml"
     }
 ]

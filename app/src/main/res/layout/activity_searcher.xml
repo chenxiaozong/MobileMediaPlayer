@@ -9,19 +9,26 @@
         android:padding="3dp"
         android:background="@android:color/holo_blue_dark"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="40dp">
 
-
+        <ImageView
+            android:id="@+id/iv_title_voice_search"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/voice_search_alpha"
+            android:scaleType="centerCrop"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
     <!--搜素-->
-    <TextView
-        android:id="@+id/tv_title_search"
+    <EditText
+        android:id="@+id/tv_title_search_key"
         android:layout_marginLeft="5dp"
-        android:text="全网搜索"
+        android:layout_marginRight="5dp"
+        android:hint="全网搜索"
         android:textSize="14sp"
         android:textColor="@drawable/tv_drawable_textcolor_selector"
-        android:drawableLeft="@drawable/tv_drawable_seacher_selector"
         android:background="@drawable/tv_drawable_background_selector"
 
+        android:drawableLeft="@drawable/tv_drawable_seacher_selector"
 
         android:drawablePadding="10dp"
         android:clickable="true"
@@ -29,24 +36,31 @@
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="wrap_content" />
-        <ImageView
-            android:id="@+id/iv_title_voice_search"
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/voice_empty"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <TextView
 
+        <TextView
+            android:id="@+id/tv_title_search_action"
             android:text="搜索"
             android:layout_gravity="center"
             android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/web_view_search"
+        android:layout_width="match_parent"
+
+        android:background="@android:color/white"
+        android:layout_height="match_parent"></WebView>
+
     <RelativeLayout
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ListView

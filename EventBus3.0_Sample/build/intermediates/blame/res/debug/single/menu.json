@@ -1,10 +1,10 @@
 [
     {
-        "merged": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\menu\\main.xml"
+        "merged": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/build/intermediates/res/merged/debug/menu/second.xml",
+        "source": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/menu/second.xml"
     },
     {
-        "merged": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\build\\intermediates\\res\\merged\\debug\\menu\\second.xml",
-        "source": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\menu\\second.xml"
+        "merged": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/build/intermediates/res/merged/debug/menu/main.xml",
+        "source": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/menu/main.xml"
     }
 ]

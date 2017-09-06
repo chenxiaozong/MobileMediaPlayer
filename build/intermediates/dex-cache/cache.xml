@@ -3,174 +3,264 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\4da6d9e5c6558169d05f83910c27575a1ca1b8d1\output\jars\libs\internal_impl-25.0.1.jar"
+        jar="/Users/chen/.android/build-cache/f0e45f9d0f44a180a7adfd4662ac5444f64fe499/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_479267875b4ed594469450529191a7fed2c37a07.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\52a764a5428305310c7bd0718c941265917ad8fd\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_7e668c066b3d36dd0acdf6e3be4cc8e79f64bf73.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\9c7bad071712a2fa71877f96346aaa07630a6be2\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_5b0f3b9054685e04b6572820d733689039c550dd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\home\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\support-annotations-25.0.1_6194e886c33c7f2a4b96072a2333f3ffcdc1fbe2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\62a7c078b161c8be53920fe7d34d38e17c93ef7d\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_d1f590c5f2a3fe932ad1232bd754e6b46949336b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\4da6d9e5c6558169d05f83910c27575a1ca1b8d1\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_6f87f449f87bdae353e3cd37a147008a632bcf9e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\2dae46124b38f4d6614d7a484b9f7dd74a6bffca\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
+        revision="26.0.0"
         sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_19239d1b0504b795b84e6f1a27e8c4049d106bc0.jar" />
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_cc5a1e08c181a96030f861a446fbf47beb5c26b6.jar" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\01code\AS\MobileMediaPlayer\xutils\build\intermediates\bundles\default\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/picasso-2.5.2.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="92ffe66a050ff20e076d836960c0391ae760bfcd">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_384b89944308b3676076fe681f108761fbd4372c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\93b083183a24d5b6eeae5cb88d542c7a3c62cbbd\output\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_1e64ce52487de76a580c1035ebcb0afd392af8de.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\93b083183a24d5b6eeae5cb88d542c7a3c62cbbd\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_edbe7174230e43ace7930ceb2e778220b2c3a409.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\2a54e94ff4ec34bd3adae92b165cc8326ee06cad\output\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_727f16fe863603489e0294462d32973afb5392b6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\2dae46124b38f4d6614d7a484b9f7dd74a6bffca\output\jars\libs\internal_impl-25.0.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_49c8bec9159b677a7fe708dd98ccb3f5717d30e1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\01code\AS\MobileMediaPlayer\vitamio\build\intermediates\bundles\default\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d9adca53045e913ba64b87dd9e3368e9a97fa86f">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_968747e9acc459857113afa376498eb21f4e8254.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\2a54e94ff4ec34bd3adae92b165cc8326ee06cad\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_0c5ecb50afaa521d6cbef2fb94a87adfd96cb364.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="D:\01code\AS\MobileMediaPlayer\app\libs\picasso-2.5.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
+        revision="26.0.0"
         sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_f5773a490bd410bf8621f08307bbed05797287f6.jar" />
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/2/picasso-2.5.2_1859fbf8cbdf739293e8ebe4f3bbcd0300bb486d/classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="D:\01code\AS\MobileMediaPlayer\app\libs\glide-3.7.0.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/glide-3.7.0.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.0"
         sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\glide-3.7.0_f9942f68f7232ff7b31d4b7bf07aa326ae06d3c4.jar" />
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/2/glide-3.7.0_2263245deafb84a18816775d3825c50a83a074ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/Sunflower.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e42e1c0f5e580a9a8fc832b2cccb7c6285800a06">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/2/Sunflower_fef20d69b6fe6ec2ac138892f5baad0832208434/classes.dex" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\9c7bad071712a2fa71877f96346aaa07630a6be2\output\jars\libs\internal_impl-25.0.1.jar"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/glide-3.7.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\internal_impl-25.0.1_f6ee59027e7f8e0a4f817fc9d651dfd475bcebfd.jar" />
+        revision="26.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/glide-3.7.0_2263245deafb84a18816775d3825c50a83a074ba.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\cd29987a56c26968836fdeda77315d48b6733b97\output\jars\classes.jar"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/xutils/build/intermediates/bundles/default/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.0"
+        sha1="92ffe66a050ff20e076d836960c0391ae760bfcd">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_f28238b4c63bad6d4e145c82d2de35f1dc0db832.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/7b3d390087fd4fd2f0b38584c8e26f05866308a2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_69bb77c989d9d09885eda90a92997a737cb02c74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/Msc.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="87c9c56d351f41f7e5fd29a036a13ceccf885e15">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/Msc_2c6abb35568604547b1c536e17ef683f30b050eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/ce27a4fe5324a12de5501e29a4ac40718276b791/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_894adf72238e07a4217147e6e6a9a3270066957a.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/Msc.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="87c9c56d351f41f7e5fd29a036a13ceccf885e15">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/2/Msc_2c6abb35568604547b1c536e17ef683f30b050eb/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/Sunflower.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e42e1c0f5e580a9a8fc832b2cccb7c6285800a06">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/Sunflower_fef20d69b6fe6ec2ac138892f5baad0832208434.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_1859fbf8cbdf739293e8ebe4f3bbcd0300bb486d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/377f9f3b06e33abc2bee766c10709b9358f69de2/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_bd1b52e72150b1f9db127f9927a7ec5ce6c80aef.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/gson-2.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="42a24d508f5e05bd22cc42bd2e2babd7b5466ec9">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/2/gson-2.2.1_52b89d11f7e4828b45f14644467c3013a45832f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/libs/gson-2.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="42a24d508f5e05bd22cc42bd2e2babd7b5466ec9">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/gson-2.2.1_52b89d11f7e4828b45f14644467c3013a45832f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/f0e45f9d0f44a180a7adfd4662ac5444f64fe499/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_ead8ce26c6aef4c6b97fe3ebb37eee7b021933d9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_7fb62d4c07780d31d54ba03d08d5da86525af103/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/6fe2788b71622df2b0d89b3e93329f7d8a43cb50/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_3e0ea33cbad6c7e0528728f895c00ff1e624c192.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/83fd417024a3fc9eebb11846691f3b0b8c7d44b7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_cd1825aef9ffc40705b6b2ffd6cf7234e89f3a44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/377f9f3b06e33abc2bee766c10709b9358f69de2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_dbaa24baf11219bb42c8941b8fa57c98e0309c48.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/ce27a4fe5324a12de5501e29a4ac40718276b791/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_f4141a869e14999b78e337c667c6cbb6ba3a5634.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/cf337d5ebe65ac9c99b3d7b7a7507de0932c2c7d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
         sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_a5016dc146018a791454c1b1884850632888a333.jar" />
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_30c216f5b0efaf2d4e32a2aa8b25195de6c18244.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Chen\.android\build-cache\c18b68f576c8b2e5d4f002eb34725b9fb7649c2d\output\jars\classes.jar"
+        jar="/Users/chen/.android/build-cache/48e3d253289410949a65f886baefd5449d32a718/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="25.0.2"
+        revision="26.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_a032cb1fe06c01d3f913056ce6d047f65db33d12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/vitamio/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d9adca53045e913ba64b87dd9e3368e9a97fa86f">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_9d7c49ccd572e1d3d8275ede8acc1806d55e8fdb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/6fe2788b71622df2b0d89b3e93329f7d8a43cb50/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_5d2081f1f157d215a711206a5f919c7d3aa8eac3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/e218f4cb43355317be6a955d50b813bb18fd1a97/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
         sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="D:\01code\AS\MobileMediaPlayer\app\build\intermediates\pre-dexed\debug\classes_106fbf86227f8411f8b8be24cc828ffbca644ae5.jar" />
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/classes_a6e9ffd9cac56934ec53612fa7db0c2a45a1bfa0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_7de046f61aeda10124a3f6136d18e501f10c593f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chen/.android/build-cache/7b3d390087fd4fd2f0b38584c8e26f05866308a2/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_bc6ad9479cd964898250c1adbf40ae1ea9a23e3b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="397956dd3e0c266842d57568c01eccbf4945a082">
+        <dex dex="/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5635514145012e1a50aa78ccfc5da92195846388/classes.dex" />
     </item>
 
 </items>

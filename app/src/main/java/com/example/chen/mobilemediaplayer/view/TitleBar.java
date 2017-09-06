@@ -50,7 +50,6 @@ public class TitleBar extends LinearLayout implements View.OnClickListener {
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        Log.d("TitleBar", "加载标题栏布局文件完成");
         initView();
 
         settitleListen();
@@ -82,8 +81,6 @@ public class TitleBar extends LinearLayout implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.tv_title:
-                Toast.makeText(context, "搜索", Toast.LENGTH_SHORT).show();
-
                 Intent intent = new Intent(context,SearchActivity.class);
                 context.startActivity(intent);
 

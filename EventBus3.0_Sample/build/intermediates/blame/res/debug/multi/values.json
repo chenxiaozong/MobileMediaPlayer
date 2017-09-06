@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "outputFile": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\dimens.xml",
+                    "file": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 92,
+                        "startOffset": 89,
                         "endColumn": 57,
-                        "endOffset": 145
+                        "endOffset": 142
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\dimens.xml",
+                    "file": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 151,
+                        "startOffset": 147,
                         "endColumn": 55,
-                        "endOffset": 202
+                        "endOffset": 198
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 217
                 },
                 "from": {
-                    "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 160,
+                        "startOffset": 155,
                         "endColumn": 52,
-                        "endOffset": 208
+                        "endOffset": 203
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 263
                 },
                 "from": {
-                    "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 59,
+                        "startOffset": 56,
                         "endColumn": 45,
-                        "endOffset": 100
+                        "endOffset": 97
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 316
                 },
                 "from": {
-                    "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 106,
+                        "startOffset": 102,
                         "endColumn": 52,
-                        "endOffset": 154
+                        "endOffset": 150
                     }
                 }
             },
@@ -106,13 +106,13 @@
                     "endOffset": 381
                 },
                 "from": {
-                    "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 214,
+                        "startOffset": 208,
                         "endColumn": 64,
-                        "endOffset": 274
+                        "endOffset": 268
                     }
                 }
             },
@@ -126,14 +126,14 @@
                     "endOffset": 672
                 },
                 "from": {
-                    "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\styles.xml",
+                    "file": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 191,
+                        "startOffset": 186,
                         "endLine": 12,
                         "endColumn": 12,
-                        "endOffset": 481
+                        "endOffset": 472
                     }
                 }
             },
@@ -147,14 +147,14 @@
                     "endOffset": 832
                 },
                 "from": {
-                    "file": "D:\\01code\\AS\\MobileMediaPlayer\\EventBus3.0_Sample\\src\\main\\res\\values\\styles.xml",
+                    "file": "/Users/chen/code/AndroidStudioProjects/MobileMediaPlayer/EventBus3.0_Sample/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 522,
+                        "startOffset": 510,
                         "endLine": 17,
                         "endColumn": 12,
-                        "endOffset": 679
+                        "endOffset": 665
                     }
                 }
             }

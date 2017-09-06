@@ -1221,9 +1221,9 @@ public class SystemMediaPlayerActivity extends Activity implements View.OnClickL
         if(delta!=0) {
 
         int brightness = (int) Math.min(Math.max(getScreenBrightness()+delta,0),255);
-        if(isAutoBrightness) {//若当前activiy是自动调节亮度,则取消其自动调节亮度
-            stopAutoBrightness();
-        }
+//        if(isAutoBrightness) {//若当前activiy是自动调节亮度,则取消其自动调节亮度
+//            stopAutoBrightness();
+//        }
 
 
         WindowManager.LayoutParams lp = this.getWindow().getAttributes();

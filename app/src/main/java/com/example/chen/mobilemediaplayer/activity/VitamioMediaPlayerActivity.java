@@ -1133,6 +1133,8 @@ public class VitamioMediaPlayerActivity extends Activity implements View.OnClick
     private float rangY;// y方向可移动的最大距离
 
 
+    private int downBright; //触摸按下时,原来亮度大小
+
     private int mVoice;   //改变音量大小
     private int downVoice; //原来音量
 
@@ -1149,7 +1151,7 @@ public class VitamioMediaPlayerActivity extends Activity implements View.OnClick
                 rangY = Math.min(screeHeight, screenWidth);
 
                 if (startX < screenWidth / 4) {//按下位置在屏幕左侧1/4 ---------屏幕亮度调节
-                    getScreenBrightness();
+                    downBright = getScreenBrightness();//获取当前屏幕亮度,标识isAutoBrightness
                 } else if (startX > 3 * screenWidth / 4) {
 
                     downVoice = am.getStreamVolume(AudioManager.STREAM_MUSIC);
@@ -1186,14 +1188,16 @@ public class VitamioMediaPlayerActivity extends Activity implements View.OnClick
      * @param distanceY
      */
     private void setScreenBrightness(float distanceY) {
-        float delta = (distanceY / screeHeight) * 255;
+
+//        //判断是否开启自动调节亮度 若开启-> 关闭自动调节
+//        if (isAutoBrightness()) {//若当前activiy是自动调节亮度,则取消其自动调节亮度
+//            stopAutoBrightness();
+//        }
+
+        float delta = (distanceY / screeHeight) * 255;//根据y方向移动距离--> 亮度值
         if (delta != 0) {
 
             int brightness = (int) Math.min(Math.max(getScreenBrightness() + delta, 0), 255);
-            if (isAutoBrightness) {//若当前activiy是自动调节亮度,则取消其自动调节亮度
-                stopAutoBrightness();
-            }
-
 
             WindowManager.LayoutParams lp = this.getWindow().getAttributes();
             lp.screenBrightness = brightness / 255f;
@@ -1205,21 +1209,36 @@ public class VitamioMediaPlayerActivity extends Activity implements View.OnClick
         }
     }
 
+    /**
+     * 判断是否开启自动亮度调节
+     * @return
+     */
+    private boolean isAutoBrightness() {
+        ContentResolver resolver = this.getContentResolver();
+        boolean isAutoBrightness = true;
+
+        try {
+            isAutoBrightness= Settings.System.getInt(resolver, Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
+
+        } catch (Settings.SettingNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return  isAutoBrightness;
+    }
+
 
     /**
      * 获取当前Activiy的亮度
      *
      * @return
      */
-    private boolean isAutoBrightness = false;
-
     public int getScreenBrightness() {
         int currentBright = 0;
         ContentResolver resolver = this.getContentResolver();
         try {
             currentBright = Settings.System.getInt(resolver, Settings.System.SCREEN_BRIGHTNESS);
             //判断是否自动调节亮度
-            isAutoBrightness = Settings.System.getInt(resolver, Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC;
         } catch (Settings.SettingNotFoundException e) {
             e.printStackTrace();
         }
