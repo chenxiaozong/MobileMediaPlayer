@@ -47,7 +47,7 @@
             android:id="@+id/rb_main_native_audio"
             style="@style/bottom_rb_style"
             android:drawableTop="@drawable/rb_selecter_native_audio"
-            android:text="网络视频"
+            android:text="本地音乐"
             android:textColor="@drawable/rb_selector_text_color" />
 
         <RadioButton

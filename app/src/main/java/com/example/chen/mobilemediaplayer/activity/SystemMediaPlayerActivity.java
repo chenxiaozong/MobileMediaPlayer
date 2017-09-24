@@ -783,7 +783,7 @@ public class SystemMediaPlayerActivity extends Activity implements View.OnClickL
                     if(isNetUri) {
 
                          //设置缓冲进度
-                        int buffer = video_view.getBufferPercentage();
+                        int buffer = video_view.getBufferPercentage();//获取缓存进度
                         int totalBuffer = buffer* sbVideoControllerPlayingProgress.getMax();
                         int secondProgress = totalBuffer/100;
 
@@ -998,7 +998,7 @@ public class SystemMediaPlayerActivity extends Activity implements View.OnClickL
      @Override
      public void onLongPress(MotionEvent e) {
          Log.d("VideoGestureDetector", "onLongPress");
-         startAndPause();
+         startAndPause();//启动-暂停
          super.onLongPress(e);
      }
 

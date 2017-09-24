@@ -73,16 +73,12 @@ public class NativeAudioPager extends BaseFragment {
 
 
 
+
     public NativeAudioPager(Context context) {
         super(context);
     }
 
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        Log.d("NativeAudioPager", "onCreate");
-        return initView();
-    }
+
 
     @Override
     protected View initView() {

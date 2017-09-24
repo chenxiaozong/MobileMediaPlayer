@@ -448,9 +448,9 @@ public class VitamioMediaPlayerActivity extends Activity implements View.OnClick
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //初始化vitamioActivity
+        setContentView(R.layout.activity_vitamio_media_player);
         Vitamio.isInitialized(this);
 
-        setContentView(R.layout.activity_vitamio_media_player);
         video_view = (VitamioVideoView) findViewById(R.id.video_view);
         //4. 自定义 实例化视频播放控制菜单
         findViews();
